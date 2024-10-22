@@ -1,0 +1,3 @@
+/home/adel/Desktop/PAOO/build/CMakeFiles/rebuild_cache.dir
+/home/adel/Desktop/PAOO/build/CMakeFiles/circle.dir
+/home/adel/Desktop/PAOO/build/CMakeFiles/edit_cache.dir

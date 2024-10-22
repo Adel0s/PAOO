@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/circle/circle.hpp
+
+/home/adel/Desktop/PAOO/src/main.cpp
+iostream
+-
+circle/circle.hpp
+-
+
