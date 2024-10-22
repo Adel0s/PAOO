@@ -10,7 +10,7 @@ private:
 
 public:
     Circle(double rad);
-    ~Circle() = default;
+    ~Circle();
     
 public:
     double GetRadius();
