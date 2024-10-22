@@ -12,5 +12,8 @@ int main()
 
     circle::Circle c1{3};
     cout << "Circle radius = " << c1.GetRadius() << "\n";
+
+    circle::Circle c2{c1};
+    cout << "Circle radius = " << c2.GetRadius() << "\n";
     return 0;
 }

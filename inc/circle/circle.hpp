@@ -6,14 +6,16 @@ namespace circle {
 class Circle 
 {
 private:
-    double radius;
+    double *radius;
 
 public:
     Circle(double rad);
     ~Circle();
+    Circle(const Circle &c);
     
 public:
     double GetRadius();
+    double GetDiameter();
 };
 
 } // namespace circle

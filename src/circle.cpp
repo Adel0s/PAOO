@@ -8,19 +8,31 @@ using std::cin;
 namespace circle {
 
 Circle::Circle(double RADIUS)
-:radius(RADIUS)
+:radius(new double{RADIUS})
 {
     cout << "Circle constructor succesfully created an object of Circle class!\n";
 }
 
 Circle::~Circle()
 {
-    cout << "Circle destructor called, object of Circle class is being destroyed! Radius = " << this->radius <<"\n";
+    cout << "Circle destructor called, object of Circle class is being destroyed! Radius = " << *radius <<"\n";
+    delete radius;
 }
 
 double Circle::GetRadius()
 {
-    return radius;
+    return *radius;
+}
+
+double Circle::GetDiameter()
+{
+    return 2 * *(radius);
+}
+
+Circle::Circle(const Circle& other)
+{
+    radius = new double {*(other.radius)};
+    cout << "Circle copy constructor called, object of Circle class is being copied! Radius = " << *radius << "\n";
 }
 
 }
