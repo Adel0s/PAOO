@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/adel/Desktop/PAOO/src/circle.cpp" "/home/adel/Desktop/PAOO/build/CMakeFiles/circle.dir/src/circle.cpp.o"
   "/home/adel/Desktop/PAOO/src/main.cpp" "/home/adel/Desktop/PAOO/build/CMakeFiles/circle.dir/src/main.cpp.o"
+  "/home/adel/Desktop/PAOO/src/phone.cpp" "/home/adel/Desktop/PAOO/build/CMakeFiles/circle.dir/src/phone.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

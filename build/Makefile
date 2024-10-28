@@ -177,6 +177,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/phone.o: src/phone.cpp.o
+
+.PHONY : src/phone.o
+
+# target to build an object file
+src/phone.cpp.o:
+	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/src/phone.cpp.o
+.PHONY : src/phone.cpp.o
+
+src/phone.i: src/phone.cpp.i
+
+.PHONY : src/phone.i
+
+# target to preprocess a source file
+src/phone.cpp.i:
+	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/src/phone.cpp.i
+.PHONY : src/phone.cpp.i
+
+src/phone.s: src/phone.cpp.s
+
+.PHONY : src/phone.s
+
+# target to generate assembly for a file
+src/phone.cpp.s:
+	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/src/phone.cpp.s
+.PHONY : src/phone.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/phone.o"
+	@echo "... src/phone.i"
+	@echo "... src/phone.s"
 .PHONY : help
 
 

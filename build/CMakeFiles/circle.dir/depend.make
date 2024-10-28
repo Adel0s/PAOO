@@ -5,5 +5,9 @@ CMakeFiles/circle.dir/src/circle.cpp.o: ../inc/circle/circle.hpp
 CMakeFiles/circle.dir/src/circle.cpp.o: ../src/circle.cpp
 
 CMakeFiles/circle.dir/src/main.cpp.o: ../inc/circle/circle.hpp
+CMakeFiles/circle.dir/src/main.cpp.o: ../inc/phone/phone.hpp
 CMakeFiles/circle.dir/src/main.cpp.o: ../src/main.cpp
+
+CMakeFiles/circle.dir/src/phone.cpp.o: ../inc/phone/phone.hpp
+CMakeFiles/circle.dir/src/phone.cpp.o: ../src/phone.cpp
 
