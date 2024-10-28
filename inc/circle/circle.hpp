@@ -9,9 +9,20 @@ private:
     double *radius;
 
 public:
+    // Constructor
     Circle(double rad);
+
+    // Destructor
     ~Circle();
+
+    // Copy constructor
     Circle(const Circle &c);
+
+    // Move constructor
+    Circle(Circle &&c);
+
+    // Display
+    void Display() const;
     
 public:
     double GetRadius();

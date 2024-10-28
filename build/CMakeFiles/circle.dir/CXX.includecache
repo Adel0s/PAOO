@@ -8,10 +8,8 @@
 
 ../inc/circle/circle.hpp
 
-/home/adel/Desktop/PAOO/src/circle.cpp
+/home/adel/Desktop/PAOO/src/main.cpp
 iostream
--
-cmath
 -
 circle/circle.hpp
 -

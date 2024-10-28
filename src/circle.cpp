@@ -35,5 +35,24 @@ Circle::Circle(const Circle& other)
     cout << "Circle copy constructor called, object of Circle class is being copied! Radius = " << *radius << "\n";
 }
 
+Circle::Circle(Circle&& c)
+{
+    radius = c.radius;
+    c.radius = nullptr;
+    cout << "Circle move constructor called, object of Circle class is being moved! Radius = " << *radius << "\n";
+}
+
+void Circle::Display() const
+{
+    if(radius)
+    {
+        cout << "Circle radius: " << *radius << "\n";
+    }
+    else
+    {
+        cout << "Circle radius: nullptr\n";
+    }
+}
+
 }
 
