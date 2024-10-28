@@ -21,6 +21,8 @@ endif()
 # Define the executable
 add_executable(${PROJECT_NAME}
                inc/circle/circle.hpp 
+               inc/phone/phone.hpp 
                src/main.cpp
-               src/circle.cpp)
+               src/circle.cpp
+               src/phone.cpp)
 
