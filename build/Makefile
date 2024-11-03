@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named circle
+# Target rules for targets named phone
 
 # Build rule for target.
-circle: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 circle
-.PHONY : circle
+phone: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 phone
+.PHONY : phone
 
 # fast build rule for target.
-circle/fast:
-	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/build
-.PHONY : circle/fast
+phone/fast:
+	$(MAKE) -f CMakeFiles/phone.dir/build.make CMakeFiles/phone.dir/build
+.PHONY : phone/fast
 
 src/circle.o: src/circle.cpp.o
 
@@ -129,7 +129,7 @@ src/circle.o: src/circle.cpp.o
 
 # target to build an object file
 src/circle.cpp.o:
-	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/src/circle.cpp.o
+	$(MAKE) -f CMakeFiles/phone.dir/build.make CMakeFiles/phone.dir/src/circle.cpp.o
 .PHONY : src/circle.cpp.o
 
 src/circle.i: src/circle.cpp.i
@@ -138,7 +138,7 @@ src/circle.i: src/circle.cpp.i
 
 # target to preprocess a source file
 src/circle.cpp.i:
-	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/src/circle.cpp.i
+	$(MAKE) -f CMakeFiles/phone.dir/build.make CMakeFiles/phone.dir/src/circle.cpp.i
 .PHONY : src/circle.cpp.i
 
 src/circle.s: src/circle.cpp.s
@@ -147,7 +147,7 @@ src/circle.s: src/circle.cpp.s
 
 # target to generate assembly for a file
 src/circle.cpp.s:
-	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/src/circle.cpp.s
+	$(MAKE) -f CMakeFiles/phone.dir/build.make CMakeFiles/phone.dir/src/circle.cpp.s
 .PHONY : src/circle.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -156,7 +156,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/phone.dir/build.make CMakeFiles/phone.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -165,7 +165,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/phone.dir/build.make CMakeFiles/phone.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -174,7 +174,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/phone.dir/build.make CMakeFiles/phone.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/phone.o: src/phone.cpp.o
@@ -183,7 +183,7 @@ src/phone.o: src/phone.cpp.o
 
 # target to build an object file
 src/phone.cpp.o:
-	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/src/phone.cpp.o
+	$(MAKE) -f CMakeFiles/phone.dir/build.make CMakeFiles/phone.dir/src/phone.cpp.o
 .PHONY : src/phone.cpp.o
 
 src/phone.i: src/phone.cpp.i
@@ -192,7 +192,7 @@ src/phone.i: src/phone.cpp.i
 
 # target to preprocess a source file
 src/phone.cpp.i:
-	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/src/phone.cpp.i
+	$(MAKE) -f CMakeFiles/phone.dir/build.make CMakeFiles/phone.dir/src/phone.cpp.i
 .PHONY : src/phone.cpp.i
 
 src/phone.s: src/phone.cpp.s
@@ -201,7 +201,7 @@ src/phone.s: src/phone.cpp.s
 
 # target to generate assembly for a file
 src/phone.cpp.s:
-	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/src/phone.cpp.s
+	$(MAKE) -f CMakeFiles/phone.dir/build.make CMakeFiles/phone.dir/src/phone.cpp.s
 .PHONY : src/phone.cpp.s
 
 # Help Target
@@ -211,7 +211,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... circle"
+	@echo "... phone"
 	@echo "... edit_cache"
 	@echo "... src/circle.o"
 	@echo "... src/circle.i"

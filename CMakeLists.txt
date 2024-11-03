@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.0)
 
 # Project name
-project(circle)
+project(phone)
 
 # Define the search path for header files
 include_directories(inc)

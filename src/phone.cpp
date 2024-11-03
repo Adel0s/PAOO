@@ -19,8 +19,9 @@ Phone::Phone(const Phone& other)
     }
 
 // Move constructor
+
 Phone::Phone(Phone&& other) noexcept
-    :owner(std::move(other.owner)), brand(std::move(other.brand)), model(std::move(other.model)), calls(std::move(other.calls)) {
+    : owner(std::move(other.owner)), brand(std::move(other.brand)), model(std::move(other.model)), calls(std::move(other.calls)) {
         std::cout << "Phone move constructor called!\n";
 }
 
@@ -53,8 +54,9 @@ void Phone::setModel(const std::string& model) {
 
 
 // Method to add a call to the call history
-void Phone::call(const std::string& caller) {
-    calls.push_back(caller);
+void Phone::call(const Phone& phone) {
+    std::cout << owner << " is calling " << phone.owner << "\n";
+    calls.push_back(phone.owner );
 }
 
 // Method to display the number of calls and the call history

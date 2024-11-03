@@ -25,7 +25,7 @@ public:
     void setBrand(const std::string& brand);
     void setModel(const std::string& model);
 
-    void call(const std::string& call);
+    void call(const Phone& phone);
 
     void displayCallHistory() const;
 
