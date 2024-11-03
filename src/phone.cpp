@@ -2,26 +2,30 @@
 #include "phone/phone.hpp"
 
 // Constructor
-Phone::Phone(const std::string& owner, const std::string& brand, const std::string& model)
+Phone::Phone(const std::string& owner, const std::string& brand, const std::string& model, const std::string& serialNr)
     : owner(owner), brand(brand), model(model) {
+        serialNumber = new std::string(serialNr);
         std::cout << "Phone constructor called!\n";
     }
 
 // Destructor
 Phone::~Phone() {
     std::cout << "Phone destructor called!\n";
+    delete serialNumber;
 }
 
 // Copy constructor
-Phone::Phone(const Phone& other)
-    : owner(other.owner), brand(other.brand), model(other.model), calls(other.calls) {
+Phone::Phone(const Phone& phone)
+    : owner(phone.owner), brand(phone.brand), model(phone.model), calls(phone.calls) {
+        serialNumber = new std::string(*phone.serialNumber); // Deep copy
         std::cout << "Phone copy constructor called!\n";
     }
 
 // Move constructor
 
-Phone::Phone(Phone&& other) noexcept
-    : owner(std::move(other.owner)), brand(std::move(other.brand)), model(std::move(other.model)), calls(std::move(other.calls)) {
+Phone::Phone(Phone&& phone) noexcept
+    : owner(std::move(phone.owner)), brand(std::move(phone.brand)), model(std::move(phone.model)), serialNumber(phone.serialNumber), calls(std::move(phone.calls)) {
+        phone.serialNumber = nullptr;
         std::cout << "Phone move constructor called!\n";
 }
 
@@ -66,4 +70,5 @@ void Phone::displayCallHistory() const {
     for (const auto& call : calls) {
         std::cout << call << "\n";
     }
+    std::cout << "\n";
 }

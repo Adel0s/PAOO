@@ -6,7 +6,7 @@
 
 class Phone {
 public:
-    Phone(const std::string& owner, const std::string& brand, const std::string& model);
+    Phone(const std::string& owner, const std::string& brand, const std::string& model, const std::string& serialNumber);
     ~Phone();
 
     // Copy constructor
@@ -33,6 +33,7 @@ private:
     std::string owner;
     std::string brand;
     std::string model;
+    std::string* serialNumber;
     double price;
     std::vector<std::string> calls;
 };
