@@ -5,12 +5,12 @@
 Phone::Phone(const std::string& owner, const std::string& brand, const std::string& model, const std::string& serialNr)
     : owner(owner), brand(brand), model(model) {
         serialNumber = new std::string(serialNr);
-        std::cout << "Phone constructor called!\n";
+        std::cout << owner << "'s phone constructor called!\n";
     }
 
 // Destructor
 Phone::~Phone() {
-    std::cout << "Phone destructor called!\n";
+    std::cout << owner << "'s phone destructor called!\n";
     delete serialNumber;
 }
 
