@@ -36,7 +36,7 @@ private:
     std::string model;
     std::string* serialNumber;
     double price;
-    std::vector<std::string> calls;
+    std::vector<std::string> calls; // no need to manually destruct, vector will do it when it's out of scope
 };
 
 #endif // PHONE_HPP
