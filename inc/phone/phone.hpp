@@ -19,6 +19,7 @@ public:
     std::string getBrand() const;
     std::string getModel() const;
     std::string getOwner() const;
+    std::string getSerialNumber() const;
     std::vector<std::string> getCalls() const;
 
     // Setters

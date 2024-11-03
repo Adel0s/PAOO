@@ -42,6 +42,9 @@ std::string Phone::getModel() const {
     return model;
 }
 
+std::string Phone::getSerialNumber() const {
+    return *serialNumber;
+}
 
 std::vector<std::string> Phone::getCalls() const {
     return calls;

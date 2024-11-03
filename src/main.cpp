@@ -30,10 +30,13 @@ int main()
 
     std::cout << "\n--- Copy Constructor Exemplu---\n";
     Phone phone4 = phone1; // phone4 este o copie a lui phone1
+    std::cout << "Serial number phone1: " << phone1.getSerialNumber() << std::endl;
     std::cout << "Istoricul apelurilor pentru phone1:" << std::endl;
     phone1.displayCallHistory();
+    std::cout << "Serial number phone4: " << phone4.getSerialNumber() << std::endl;
     std::cout << "Istoricul apelurilor pentru phone4 (copie a lui phone1):" << std::endl;
     phone4.displayCallHistory();
+    
 
     // Modific phone1 pentru a arata ca phone4 este o copie independenta si nu se va modifica
     phone1.call(phone2);
